@@ -343,17 +343,17 @@ p {
 .header-other .nav-link,
 .header-other .user-icon,
 .header-other .mobile-menu-toggle span {
-    color: var(--color-primary);
-    border-color: var(--color-primary);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .header-other .user-icon:hover {
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 .header-other .nav-link::after {
-    background-color: var(--color-primary);
+  background-color: var(--color-primary);
 }
 
 /* Home page header styles (white text) */
@@ -361,17 +361,17 @@ p {
 .header-home .nav-link,
 .header-home .user-icon,
 .header-home .mobile-menu-toggle span {
-    color: var(--color-secondary);
-    border-color: var(--color-secondary);
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
 }
 
 .header-home .user-icon:hover {
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .header-home .nav-link::after {
-    background-color: var(--color-secondary);
+  background-color: var(--color-secondary);
 }
 
 /* ========================================
