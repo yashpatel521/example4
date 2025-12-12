@@ -18,44 +18,27 @@
                 <div class="artists-footer-connect-rows">
                     <div class="artists-footer-connect-row">
                         <span class="artists-footer-connect-item">
-                            <span class="artists-footer-icon">X</span>
+                            <i class="fa-brands fa-x"></i>
                             <span class="artists-footer-label">X</span>
                         </span>
                         <span class="artists-footer-connect-item">
-                            <span class="artists-footer-icon">f</span>
+                            <i class="fa-brands fa-facebook-f"></i>
                             <span class="artists-footer-label">Facebook</span>
                         </span>
                         <span class="artists-footer-connect-item">
-                            <span class="artists-footer-icon">t</span>
+                            <i class="fa-brands fa-tiktok"></i>
                             <span class="artists-footer-label">TikTok</span>
                         </span>
                         <span class="artists-footer-connect-item">
-                            <span class="artists-footer-icon">ig</span>
+                            <i class="fa-brands fa-instagram"></i>
                             <span class="artists-footer-label">Instagram</span>
                         </span>
                         <span class="artists-footer-connect-item">
-                            <span class="artists-footer-icon">yt</span>
+                            <i class="fa-brands fa-youtube"></i>
                             <span class="artists-footer-label">YouTube</span>
                         </span>
                     </div>
-                    <div class="artists-footer-connect-row">
-                        <span class="artists-footer-connect-item">
-                            <span class="artists-footer-icon">A</span>
-                            <span class="artists-footer-label">Artsy</span>
-                        </span>
-                        <span class="artists-footer-connect-item">
-                            <span class="artists-footer-icon">A</span>
-                            <span class="artists-footer-label">Artnet</span>
-                        </span>
-                        <span class="artists-footer-connect-item">
-                            <span class="artists-footer-icon">W</span>
-                            <span class="artists-footer-label">WeChat</span>
-                        </span>
-                        <span class="artists-footer-connect-item">
-                            <span class="artists-footer-icon">小</span>
-                            <span class="artists-footer-label">小红书</span>
-                        </span>
-                    </div>
+
                 </div>
             </div>
         </div>
