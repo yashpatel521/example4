@@ -1,0 +1,114 @@
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 1024px) {
+  :root {
+    --fs-6xl: 3rem;
+    --fs-5xl: 2.5rem;
+    --fs-4xl: 2rem;
+  }
+  
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 1.5rem;
+    --header-height: 60px;
+    --fs-6xl: 2.5rem;
+    --fs-5xl: 2rem;
+    --fs-4xl: 1.75rem;
+  }
+  
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  .header-container {
+    grid-template-columns: 1fr auto auto;
+    padding: 0 var(--spacing-md);
+  }
+  
+  .nav-left,
+  .nav-right {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.98);
+    flex-direction: column;
+    padding: var(--spacing-lg);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-base);
+    align-items: flex-start;
+  }
+  
+  .nav-left.active,
+  .nav-right.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav-right {
+    top: calc(var(--header-height) + 150px);
+  }
+  
+  .logo {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+  }
+  
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+  
+  .exhibitions-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+  
+  .hero-subtitle {
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --container-padding: 1rem;
+    --fs-6xl: 2rem;
+    --fs-5xl: 1.75rem;
+  }
+  
+  .hero-title {
+    font-size: var(--fs-4xl);
+  }
+  
+  .hero-subtitle {
+    font-size: var(--fs-xl);
+  }
+}

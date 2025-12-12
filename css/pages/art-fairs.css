@@ -1,0 +1,413 @@
+/* Art Fairs Section Styles */
+.art-fairs-section {
+    padding: 60px 0;
+    background-color: #f6f6f5;
+}
+.art-fairs-title {
+    font-size: 2rem;
+    color: #000;
+    margin: 2rem 0;
+}
+.art-fairs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.art-fair-card {
+    background: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 480px;
+}
+.flex_between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.art-fair-image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.art-fair-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.art-fair-card:hover .art-fair-image img {
+    transform: scale(1.05);
+}
+
+.art-fair-content {
+    padding: 25px 0px 30px 0px;
+}
+
+.art-fair-title {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    color: #000;
+    line-height: 1.2;
+}
+
+.art-fair-date {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 2px 0;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.art-fair-location {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 14px 0;
+    color: #000;
+    line-height: 1.4;
+}
+
+.art-fair-description {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 18px 0;
+    font-weight: 500;
+    color: #000;
+}
+
+.art-fair-link {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.art-fair-link:hover {
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .art-fairs-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 480px;
+    }
+
+    .art-fair-content {
+        padding: 20px;
+    }
+
+    .art-fair-title {
+        font-size: 20px;
+    }
+
+    .art-fair-image {
+        height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .art-fairs-section {
+        padding: 40px 20px;
+    }
+
+    .art-fair-content {
+        padding: 15px;
+    }
+
+    .art-fair-title {
+        font-size: 18px;
+    }
+
+    .art-fair-date,
+    .art-fair-location,
+    .art-fair-description,
+    .art-fair-link {
+        font-size: 13px;
+    }
+
+    .art-fair-image {
+        height: 180px;
+    }
+}
+
+/* Newsletter Modal CSS - Professional Styling */
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    background: #fff;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    transform: translateY(20px) scale(0.95);
+    transition: all 0.3s ease;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.overlay.show .modal {
+    transform: translateY(0) scale(1);
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 40px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 0;
+}
+.modal-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    color: #1a1a1a;
+    font-family: "Inter", sans-serif;
+}
+.close {
+    background: #f5f5f5;
+    border: 0;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: #666;
+    transition: all 0.2s ease;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close:hover {
+    background: #e8e8e8;
+    color: #333;
+    transform: scale(1.05);
+}
+
+.modal-body {
+    display: block;
+    padding: 32px 40px;
+}
+
+/* Paired label/field grid for perfect alignment */
+.form-grid {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    column-gap: 24px;
+    row-gap: 16px;
+}
+.form-row {
+    display: contents; /* lets label and field span the parent grid */
+}
+.form-label {
+    font-size: 13px;
+    color: #000;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
+.form-label small {
+    display: block;
+    font-size: 12px;
+    color: #7a7a7a;
+    margin-top: 4px;
+}
+.form-field {
+    width: 100%;
+}
+.form-field .small {
+    font-size: 13px;
+    color: #7a7a7a;
+    margin: 0 0 8px 0;
+}
+.labels {
+    padding-right: 12px;
+}
+.labels .label {
+    font-size: 13px;
+    color: #000;
+    margin-bottom: 26px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 0.5px;
+}
+.labels small {
+    font-size: 12px;
+    color: #7a7a7a;
+    margin-top: 6px;
+    display: block;
+}
+
+form {
+    padding-left: 12px;
+}
+.row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+.field {
+    width: 100%;
+    margin-bottom: 12px;
+}
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #000;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    transition: all 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    outline: none;
+    border-color: #000;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.note {
+    font-size: 13px;
+    color: #7a7a7a;
+    margin: 12px 0;
+}
+.option-group {
+    margin-bottom: 18px;
+    padding-left: 6px;
+}
+.option {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.option input {
+    margin-top: 4px;
+    width: 16px;
+    height: 16px;
+    accent-color: #000;
+}
+
+.option p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    font-family: "Inter", sans-serif;
+}
+.option p.small {
+    font-size: 13px;
+    color: #7a7a7a;
+}
+
+.locations {
+    margin-left: 6px;
+}
+.locations label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.modal-footer {
+    padding: 24px 40px;
+    border-top: 1px solid #e5e5e5;
+    background: #fafafa;
+}
+.btn {
+    background: #000;
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 8px;
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn:hover {
+    background: #333;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.fine {
+    padding: 20px 40px;
+    font-size: 12px;
+    color: #000;
+    text-align: center;
+    background: #fafafa;
+    border-top: 1px solid #e5e5e5;
+    font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 760px) {
+    .modal-body {
+        padding: 18px;
+    }
+    .form-grid {
+        grid-template-columns: 1fr;
+        row-gap: 12px;
+    }
+    .form-label {
+        margin-bottom: 6px;
+    }
+    .modal-header {
+        padding: 18px;
+    }
+    .modal-footer {
+        padding: 14px;
+    }
+    .fine {
+        padding: 12px;
+    }
+}

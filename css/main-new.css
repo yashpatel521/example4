@@ -1,0 +1,19 @@
+/* ========================================
+   WHITE CUBE GALLERY - MAIN STYLESHEET
+   Organized CSS Architecture
+   ======================================== */
+
+/* Base Styles */
+@import url("./base/variables.css");
+@import url("./base/animations.css");
+
+/* Components */
+@import url("./components/buttons.css");
+@import url("./components/cards.css");
+
+/* Pages */
+@import url("./pages/home.css");
+@import url("./pages/news.css");
+
+/* Responsive */
+@import url("./base/responsive.css");

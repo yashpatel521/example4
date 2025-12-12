@@ -1,0 +1,45 @@
+/* ========================================
+   NEWS PAGE STYLES
+   ======================================== */
+
+.news-card {
+  background-color: var(--color-bg-secondary);
+  padding: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
+  transition: var(--transition-base);
+  cursor: pointer;
+}
+
+.news-card:hover {
+  transform: translateX(10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.news-date {
+  font-size: var(--fs-sm);
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--spacing-sm);
+}
+
+.news-card h3 {
+  margin-bottom: var(--spacing-md);
+  font-size: var(--fs-2xl);
+}
+
+.news-card p {
+  margin-bottom: var(--spacing-md);
+  line-height: 1.8;
+}
+
+.news-category {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--spacing-sm);
+}

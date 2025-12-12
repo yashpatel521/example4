@@ -1,0 +1,101 @@
+/* ========================================
+   HOME PAGE STYLES
+   ======================================== */
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: var(--color-secondary);
+    max-width: 900px;
+    padding: 0 var(--spacing-lg);
+}
+
+.hero-title {
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 300;
+    animation: fadeInUp 1s ease;
+    letter-spacing: 0.02em;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-style: italic;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 0;
+    animation: fadeInUp 1s ease 0.2s both;
+    font-family: var(--font-secondary);
+}
+
+.hero-meta {
+    font-size: var(--fs-base);
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--spacing-xl);
+    animation: fadeInUp 1s ease 0.4s both;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: var(--color-secondary);
+    font-size: var(--fs-sm);
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    transition: var(--transition-base);
+    animation: fadeInUp 1s ease 0.6s both;
+    cursor: pointer;
+}
+
+.hero-cta:hover {
+    border-bottom-color: var(--color-secondary);
+    transform: translateX(5px);
+}
+
+.hero-cta:hover::after {
+    transform: translateX(5px);
+}
+
+/* News Section */
+.news-item h4 {
+    margin-bottom: var(--spacing-sm);
+}

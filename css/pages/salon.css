@@ -1,0 +1,538 @@
+/* ========================================
+   SALON PAGE STYLES
+   ======================================== */
+
+/* Salon Hero Section */
+.salon-hero-section {
+    padding: var(--spacing-xl) 0;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.salon-hero-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-2xl);
+}
+
+.salon-hero-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.salon-hero-text p {
+    font-family: var(--font-primary);
+    font-size: var(--fs-lg);
+    line-height: 1.6;
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+.salon-hero-title {
+    flex: 0.2 0 auto;
+}
+
+.salon-hero-title h1 {
+    font-family: var(--font-primary);
+    font-size: var(--fs-5xl);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: #000;
+    margin: 0;
+}
+
+/* Salon Artwork Section */
+.salon-artwork-section {
+    padding: var(--spacing-3xl) 0;
+}
+
+.salon-artwork-layout {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: start;
+}
+
+.salon-artwork-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.salon-artwork-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    padding-left: var(--spacing-2xl);
+    justify-content: space-between;
+    height: 100%;
+}
+
+.salon-artwork-artist-info {
+    margin-bottom: var(--spacing-lg);
+}
+
+.salon-artwork-artist-name {
+    font-family: var(--font-primary);
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--color-text-primary);
+    margin-bottom: 0.1rem;
+    letter-spacing: -0.01em;
+    padding: 0;
+}
+
+.salon-artwork-title {
+    font-family: var(--font-primary);
+    font-size: 25px;
+    color: #000;
+    margin: 0;
+    font-style: italic;
+}
+
+.salon-artwork-description p {
+    font-family: var(--font-primary);
+    font-size: 15px;
+    line-height: 1.6;
+    color: #000;
+    margin: 0 0 var(--spacing-lg) 0;
+}
+
+.salon-artwork-presentation-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-family: var(--font-primary);
+    font-size: var(--fs-base);
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: var(--transition-base);
+    font-weight: 600;
+}
+
+.salon-artwork-presentation-link:hover {
+    gap: var(--spacing-md);
+}
+
+.link-arrow {
+    font-size: var(--fs-lg);
+    transition: var(--transition-base);
+}
+
+/* Salon Artwork Section Two - Two Column Grid */
+.salon-artwork-section-two {
+    padding: var(--spacing-3xl) 0;
+    padding-bottom: var(--spacing-xl);
+}
+
+.salon-artwork-section-title {
+    font-family: var(--font-primary);
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin: 0 0 var(--spacing-lg) 0;
+    letter-spacing: -0.02em;
+}
+
+.salon-artwork-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+}
+
+.salon-artwork-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.salon-artwork-item-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.salon-artwork-item-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.salon-artwork-item-artist {
+    font-family: var(--font-primary);
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--color-text-primary);
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+.salon-artwork-item-title {
+    font-family: var(--font-primary);
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+    font-style: italic;
+}
+
+.salon-artwork-item-description {
+    font-family: var(--font-primary);
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000;
+    margin: 0;
+}
+
+.salon-artwork-item-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-family: var(--font-primary);
+    font-size: var(--fs-base);
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: var(--transition-base);
+    font-weight: 600;
+}
+
+.salon-artwork-item-link:hover {
+    gap: var(--spacing-md);
+}
+
+/* View All Button Styles */
+.view-all-container {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-2xl);
+}
+
+.view-all-button {
+    background: none;
+    color: var(--color-text-primary);
+    padding: 12px 32px;
+    font-family: var(--font-primary);
+    font-size: var(--fs-base);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-base);
+    letter-spacing: -0.01em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.view-all-button:hover svg {
+    fill: #fff;
+}
+
+/* Hidden card styles */
+#hiddenCard {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Consign Section */
+.consign-section {
+    padding: var(--spacing-3xl) 0;
+}
+
+.consign-section-title {
+    font-family: var(--font-primary);
+    font-size: 35px;
+    color: var(--color-text-primary);
+    margin: 0 0 var(--spacing-xl) 0;
+    letter-spacing: -0.02em;
+}
+
+.consign-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+}
+
+.consign-content {
+    max-width: 700px;
+}
+
+.consign-description {
+    font-family: var(--font-primary);
+    font-size: 39px;
+    color: var(--color-text-primary);
+    margin: 0 0 var(--spacing-lg) 0;
+    line-height: 1.2;
+}
+
+.consign-text {
+    font-family: var(--font-primary);
+    font-size: 18px;
+
+    color: var(--color-text-primary);
+    margin: 0 0 var(--spacing-lg) 0;
+}
+
+.consign-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-family: var(--font-primary);
+    font-size: var(--fs-base);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: var(--transition-base);
+}
+
+.consign-link:hover {
+    gap: var(--spacing-md);
+}
+
+.consign-link svg {
+    transition: var(--transition-base);
+}
+
+.consign-image {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .salon-hero-layout {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+
+    .salon-hero-text {
+        max-width: 100%;
+    }
+
+    .salon-hero-title h1 {
+        font-size: var(--fs-4xl);
+    }
+
+    .salon-artwork-layout {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .salon-artwork-image {
+        order: 2;
+    }
+
+    .salon-artwork-details {
+        order: 1;
+        padding-left: 0;
+        gap: var(--spacing-sm);
+    }
+    .salon-artwork-artist-info {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .salon-hero-text p {
+        font-size: var(--fs-base);
+    }
+
+    .salon-hero-title h1 {
+        font-size: var(--fs-3xl);
+    }
+
+    .salon-artwork-section {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .salon-artwork-artist-name {
+        font-size: var(--fs-2xl);
+    }
+
+    .salon-artwork-title {
+        font-size: var(--fs-base);
+    }
+
+    .salon-artwork-description p {
+        font-size: var(--fs-sm);
+    }
+
+    .salon-artwork-presentation-link {
+        font-size: var(--fs-sm);
+    }
+
+    .salon-artwork-section-two {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .salon-artwork-section-title {
+        font-size: 28px;
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .salon-artwork-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .salon-artwork-item-artist {
+        font-size: var(--fs-2xl);
+    }
+
+    .salon-artwork-item-title {
+        font-size: var(--fs-base);
+    }
+
+    .salon-artwork-item-description {
+        font-size: var(--fs-sm);
+    }
+
+    .salon-artwork-item-link {
+        font-size: var(--fs-sm);
+    }
+
+    .view-all-container {
+        margin-top: var(--spacing-xl);
+    }
+
+    .view-all-button {
+        padding: 10px 24px;
+        font-size: var(--fs-sm);
+    }
+
+    .consign-section {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .consign-section-title {
+        font-size: 32px;
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .consign-layout {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .consign-description,
+    .consign-text {
+        font-size: var(--fs-sm);
+    }
+
+    .consign-link {
+        font-size: var(--fs-sm);
+    }
+
+    .consign-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .salon-hero-section {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .salon-hero-text p {
+        font-size: var(--fs-sm);
+    }
+
+    .salon-hero-title h1 {
+        font-size: var(--fs-2xl);
+    }
+
+    .salon-artwork-section {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .salon-artwork-layout {
+        gap: var(--spacing-lg);
+    }
+
+    .salon-artwork-artist-name {
+        font-size: var(--fs-xl);
+    }
+
+    .salon-artwork-title {
+        font-size: var(--fs-sm);
+    }
+
+    .salon-artwork-description p {
+        font-size: var(--fs-xs);
+    }
+
+    .salon-artwork-presentation-link {
+        font-size: var(--fs-xs);
+    }
+
+    .salon-artwork-section-two {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .salon-artwork-section-title {
+        font-size: 24px;
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .salon-artwork-grid {
+        gap: var(--spacing-lg);
+    }
+
+    .salon-artwork-item-artist {
+        font-size: var(--fs-xl);
+    }
+
+    .salon-artwork-item-title {
+        font-size: var(--fs-sm);
+    }
+
+    .salon-artwork-item-description {
+        font-size: var(--fs-xs);
+    }
+
+    .salon-artwork-item-link {
+        font-size: var(--fs-xs);
+    }
+
+    .view-all-container {
+        margin-top: var(--spacing-lg);
+    }
+
+    .view-all-button {
+        padding: 8px 20px;
+        font-size: var(--fs-xs);
+    }
+
+    .consign-section {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .consign-title {
+        font-size: 24px;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .consign-description,
+    .consign-text {
+        font-size: var(--fs-xs);
+    }
+
+    .consign-link {
+        font-size: var(--fs-xs);
+    }
+
+    .consign-image {
+        height: 250px;
+    }
+}

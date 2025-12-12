@@ -1,0 +1,376 @@
+/* Consignments Hero Section */
+
+.collect-consignments-hero {
+    padding: var(--spacing-2xl) 0;
+    background-color: var(--color-bg-primary);
+}
+
+.consignments-hero-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.5fr;
+    gap: var(--spacing-3xl);
+}
+
+.consignments-hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.consignments-hero-text .h3 div {
+    font-family: var(--font-secondary);
+    font-size: 28px;
+    line-height: 1.3;
+    color: var(--color-text-primary);
+    margin-bottom: 0;
+}
+
+.consignments-hero-text .prose-responsive {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.consignments-hero-text .prose-responsive p,
+.consignments-hero-text .prose-responsive div {
+    margin-bottom: var(--spacing-sm);
+    color: #000;
+}
+
+.consignments-hero-text .prose-responsive a {
+    color: var(--color-text-primary);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.consignments-hero-text .btn-outline {
+    border: 1px solid var(--color-text-primary);
+    padding: 0.6rem 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-transform: none;
+    letter-spacing: 0.05em;
+    font-size: 0.85rem;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.consignments-hero-text .btn-outline:hover {
+    background-color: var(--color-text-primary);
+    color: var(--color-secondary);
+}
+
+.consignments-hero-text .btn-arrow {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.consignments-hero-image {
+    overflow: hidden;
+}
+
+.consignments-hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .collect-consignments-hero {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .consignments-hero-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+}
+
+@media (max-width: 768px) {
+    .collect-consignments-hero {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .consignments-hero-text .h3 div {
+        font-size: var(--fs-2xl);
+    }
+
+    .consignments-hero-text {
+        gap: var(--spacing-lg);
+    }
+}
+
+/* Contact Modal Styles */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 24px;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    border-radius: 2px;
+    padding: 32px 40px 36px;
+    max-width: 640px;
+    width: 100%;
+    max-height: 92vh;
+    overflow-y: auto;
+    position: relative;
+    border: 1px solid #dedede;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #666;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.modal-close:hover {
+    color: #000;
+}
+
+.modal-title {
+    font-family: var(--font-secondary);
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+    color: var(--color-text-primary);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.modal-helper-text {
+    margin: 0;
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-section-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group-inline {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.form-group-inline .form-label {
+    flex: 0 0 150px;
+}
+
+.form-field-wrapper {
+    flex: 1 1 auto;
+}
+
+.form-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+}
+
+.required {
+    color: #d32f2f;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+    color: var(--color-text-primary);
+    background-color: white;
+    width: 100%;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--color-text-primary);
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23000' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 36px;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.phone-input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.phone-country-select {
+    padding: 10px 12px;
+    border: none;
+    border-right: 1px solid #ddd;
+    background-color: #f5f5f5;
+    font-size: 13px;
+    color: var(--color-text-primary);
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+}
+
+.phone-country-select:focus {
+    outline: none;
+}
+
+.phone-input {
+    border: none;
+    flex: 1;
+    border-radius: 0;
+}
+
+.phone-input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.checkbox-group {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-checkbox {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: var(--color-text-primary);
+}
+
+.checkbox-label {
+    font-size: 14px;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    margin: 0;
+}
+
+.privacy-notice {
+    font-size: 11px;
+    color: #777;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.privacy-link {
+    color: var(--color-text-primary);
+    text-decoration: underline;
+}
+
+.btn-submit {
+    background-color: var(--color-text-primary);
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 30px 20px;
+        max-width: 100%;
+    }
+
+    .modal-title {
+        font-size: 20px;
+    }
+
+    .form-section {
+        gap: 16px;
+    }
+
+    .form-group-inline {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-group-inline .form-label {
+        flex: initial;
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+        font-size: 16px;
+    }
+}
+@media (max-width: 640px) {
+    .consignments-hero-text .h3 div {
+        font-size: var(--fs-xl);
+    }
+}

@@ -1,0 +1,715 @@
+/* Available Artworks - Account CTA Section */
+
+.available-account-section {
+    padding: 40px 0;
+}
+
+.available-account-layout {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+}
+
+.available-account-text {
+    max-width: 390px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--color-text-primary);
+    margin: 0;
+    text-align: left;
+}
+
+.available-account-actions {
+    display: inline-flex;
+    gap: 12px;
+}
+
+.available-account-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    border-radius: 0;
+    border: 1px solid #000;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.available-account-btn--primary {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.available-account-btn--secondary {
+    background-color: #fff;
+    color: var(--color-text-primary);
+    border-color: #000;
+}
+
+.available-account-btn:hover {
+    opacity: 0.8;
+}
+
+.available-account-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Available Artworks - Artwork Grid */
+
+.available-artworks-grid-section {
+    padding: 3rem 0 4rem;
+}
+
+.available-artworks-grid {
+    display: flex;
+    /* Middle column slightly wider to mimic reference layout */
+    gap: 3rem;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+}
+
+.available-artwork-card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1 1 0;
+}
+
+.available-artworks-grid .available-artwork-card:nth-child(2) {
+    flex-grow: 1.4;
+}
+
+.available-artwork-image-link {
+    display: flex;
+    height: 450px; /* shared visual height across first row */
+}
+
+.available-artwork-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.available-artwork-meta {
+    margin-top: 1.25rem;
+}
+
+.available-artwork-artist {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+.available-artwork-title {
+    font-size: 16px;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+.available-artwork-title-italic {
+    font-style: italic;
+}
+
+.available-artwork-price {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+/* Available Artworks - Secondary Grid with CTA */
+
+.available-artworks-secondary-section {
+    padding: 3rem 0 4rem;
+}
+
+.available-artworks-secondary-grid {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+}
+
+.available-secondary-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+
+.available-artworks-secondary-grid .available-secondary-card:nth-child(1) {
+    flex-grow: 1.2;
+}
+.available-artworks-secondary-grid .available-secondary-card:nth-child(2) {
+    flex-grow: 1;
+}
+.available-artworks-secondary-grid .available-artworks-cta-card {
+    flex: 1.4 1 0;
+}
+
+.available-secondary-image-link {
+    display: flex;
+    height: 360px;
+}
+
+.available-secondary-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.available-secondary-meta {
+    margin-top: 1.25rem;
+}
+
+.available-secondary-artist {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin: 0 0 0.25rem;
+}
+
+.available-secondary-title {
+    font-size: 15px;
+    color: var(--color-text-secondary);
+    margin: 0 0 0.25rem;
+}
+
+.available-secondary-title-italic {
+    font-style: italic;
+}
+
+.available-secondary-price {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+.available-artworks-cta-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    padding: 2.5rem;
+    height: 360px;
+}
+
+.available-artworks-cta-content {
+    max-width: 360px;
+}
+
+.available-artworks-cta-text {
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 0 0 1.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.available-artworks-cta-btn {
+    margin-top: 0.5rem;
+}
+
+/* Create Account Modal */
+
+.available-account-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    z-index: 2000;
+}
+
+.available-account-modal.is-open {
+    display: block;
+}
+
+.available-account-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.available-account-modal-dialog {
+    position: relative;
+    max-width: 1100px;
+    margin: 8rem auto;
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+}
+
+.available-account-modal-header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 2rem 2.25rem 2.25rem;
+    margin-bottom: 0;
+}
+
+.available-account-modal-close {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.available-account-modal-header .available-account-modal-close {
+    position: static;
+    top: auto;
+    right: auto;
+    justify-self: end;
+    font-size: 1.25rem;
+}
+
+.available-account-modal-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+
+    align-items: start;
+}
+
+.available-account-modal-heading {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+    grid-column: 2;
+}
+
+.available-account-modal-form {
+    padding: 1.5rem 2rem;
+}
+
+.available-account-modal-note {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-left: 3rem;
+}
+
+.available-account-modal-form-fields {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    column-gap: 1rem;
+    row-gap: 0.75rem;
+    align-items: center;
+}
+
+.available-account-modal-form-fields label {
+    display: contents;
+    font-size: 14px;
+}
+
+.available-account-modal-form-fields label > span {
+    color: #000;
+    text-align: right;
+    grid-column: 1;
+}
+
+.available-account-modal-form-fields input[type="text"],
+.available-account-modal-form-fields input[type="email"],
+.available-account-modal-form-fields input[type="password"] {
+    border: 1px solid #ddd;
+    padding: 0.5rem 0.75rem;
+    font-size: 14px;
+    height: 38px;
+    border-radius: 0;
+    width: 100%;
+    grid-column: 2;
+}
+
+.available-account-modal-checkbox {
+    display: contents;
+    font-size: 14px;
+}
+
+.available-account-modal-checkbox span {
+    grid-column: 1;
+    justify-self: end;
+    text-align: right;
+}
+
+.available-account-modal-checkbox input {
+    grid-column: 2;
+    justify-self: start;
+}
+
+.available-account-modal-submit {
+    margin-top: 0.85rem;
+    width: 100%;
+    height: 42px;
+    grid-column: 2;
+    justify-self: end;
+}
+
+.available-account-modal-footer-text {
+    margin-top: 1rem;
+    font-size: 14px;
+    text-align: right;
+    color: #000;
+    font-weight: 500;
+}
+
+.available-account-modal-footer-text a {
+    text-decoration: underline;
+}
+
+.available-account-modal-benefits {
+    border-left: 1px solid #e6e6e6;
+    background-color: #f6f6f5;
+    height: 100%;
+    padding: 1.5rem 2rem;
+}
+
+.available-account-modal-benefits-heading {
+    font-size: 18px;
+    margin: 0 0 0.75rem;
+    font-weight: 500;
+}
+
+.available-account-modal-benefits-list {
+    padding-left: 1.2rem;
+    margin: 0 15px 0.75rem;
+    list-style: disc;
+    line-height: 1.6;
+}
+
+.available-account-modal-benefits-list li {
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+}
+
+.available-account-modal-benefits-note {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+}
+
+.available-account-modal-legal {
+    margin-top: 1.25rem;
+    font-size: 11px;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Artwork Detail Fullscreen Modal */
+
+.artwork-detail-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    z-index: 2100;
+}
+
+.artwork-detail-modal.is-open {
+    display: block;
+}
+
+.artwork-detail-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.artwork-detail-dialog {
+    position: relative;
+    height: calc(100vh);
+    background: #fff;
+    display: flex;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+}
+
+.artwork-detail-close {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.artwork-detail-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 2.4fr) minmax(320px, 1fr);
+    width: 100%;
+}
+
+.artwork-detail-main {
+    padding: 3rem 3rem 3rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.artwork-detail-main-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.artwork-detail-sidebar {
+    padding: 3rem 3rem 3rem 4rem;
+    border-left: 1px solid #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    background-color: #f6f6f5;
+}
+
+.artwork-detail-artist {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0;
+    color: #000;
+    margin-top: 3rem;
+}
+
+.artwork-detail-title {
+    margin: 0;
+    font-size: 25px;
+    color: #000;
+}
+
+.artwork-detail-title-italic {
+    font-style: italic;
+}
+
+.artwork-detail-actions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.artwork-detail-btn {
+    padding: 0.8rem 1.8rem;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 0;
+    border: 1px solid #000;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    gap: 0.5rem ;
+    align-items: center;
+}
+.artwork-detail-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.artwork-detail-btn-primary {
+    background: #000;
+    color: #fff;
+}
+.artwork-detail-btn-primary:hover {
+    background: #fff;
+    color: #000;
+}
+
+.artwork-detail-btn-secondary {
+    background: #fff;
+    color: #000;
+}
+
+.artwork-detail-meta p {
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.artwork-detail-thumbs { 
+    display: flex;
+    gap: 0.5rem;
+}
+
+.artwork-detail-thumb {
+    border: 1px solid transparent;
+    padding: 2px;
+    background: none;
+    cursor: pointer;
+}
+
+.artwork-detail-thumb img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.artwork-detail-thumb.is-active {
+    border-color: #000;
+}
+
+.artwork-detail-separator {
+    border-top: 1px solid #e6e6e6;
+    margin: 1.75rem 0;
+}
+
+.artwork-detail-share-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;  
+}
+.artwork-detail-share-row span {
+ 
+    font-size: 16px;
+    color:  #000;
+    font-weight: 500;
+ 
+}
+
+.artwork-detail-share-icon {
+    font-size: 15px;
+    m
+}
+
+@media (max-width: 1024px) {
+    .artwork-detail-dialog {
+        margin: 1rem;
+        height: calc(100vh - 2rem);
+    }
+
+    .artwork-detail-layout {
+        grid-template-columns: 1.6fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .artwork-detail-dialog {
+        margin: 0;
+        max-width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .artwork-detail-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .artwork-detail-main {
+        padding: 2rem 1.5rem 1.5rem;
+    }
+
+    .artwork-detail-sidebar {
+        padding: 1.5rem;
+    }
+
+    .artwork-detail-thumbs {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 1600px) {
+    .available-artworks-secondary-grid,
+    .available-artworks-grid-section,
+    .available-account-section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .available-artworks-grid,
+    .available-artworks-secondary-grid {
+        flex-wrap: wrap;
+    }
+    .available-artworks-grid > *,
+    .available-artworks-secondary-grid > * {
+        flex: 1 1 calc(50% - 1.5rem);
+        max-width: calc(50% - 1.5rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .available-account-layout {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .available-artworks-grid,
+    .available-artworks-secondary-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .available-artworks-grid > *,
+    .available-artworks-secondary-grid > * {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .available-account-modal-dialog {
+        margin: 1.5rem 0.75rem;
+        padding: 1.5rem 1.25rem 1.75rem;
+        max-height: calc(100vh - 3rem);
+    }
+
+    .available-account-modal-content {
+        grid-template-columns: 1fr;
+    }
+
+    .available-account-modal-benefits {
+        border-left: none;
+        padding-left: 0;
+        margin-top: 1rem;
+        background-color: transparent;
+    }
+
+    .available-account-modal-form-fields {
+        grid-template-columns: 1fr;
+    }
+    .available-account-modal-form-fields label > span,
+    .available-account-modal-checkbox span,
+    .available-account-modal-checkbox input,
+    .available-account-modal-form-fields input[type="text"],
+    .available-account-modal-form-fields input[type="email"],
+    .available-account-modal-form-fields input[type="password"] {
+        grid-column: 1;
+        justify-self: stretch;
+        text-align: left;
+    }
+    .available-account-modal-submit,
+    .available-account-modal-footer-text {
+        grid-column: 1;
+        justify-self: start;
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .available-artworks-grid,
+    .available-artworks-secondary-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+}

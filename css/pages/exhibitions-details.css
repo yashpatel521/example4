@@ -1,0 +1,112 @@
+.exhibition_detail_second_section {
+    margin: 5rem auto 0;
+}
+.exhibition_detail_second_section h1 {
+    font-size: 3rem;
+    margin: 4rem 0;
+}
+
+.hero-detail {
+    justify-content: flex-start;
+    align-items: center;
+}
+.hero-detail .hero-content {
+    margin-bottom: 0;
+    padding-left: 10rem;
+    text-align: start;
+}
+
+.exhibition-info-section {
+    padding: var(--spacing-3xl) 0;
+}
+
+.exhibition-info-layout {
+    display: grid;
+    grid-template-columns: minmax(260px, 320px) minmax(0, 1fr);
+    gap: 15rem;
+    margin: 0 auto;
+}
+
+.exhibition-info-side {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.exhibition-info-block {
+    display: grid;
+    gap: 6px;
+}
+
+.exhibition-info-label {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 500;
+}
+
+.exhibition-info-value {
+    font-size: 15px;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.exhibition-share {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--color-text-primary);
+}
+
+.exhibition-share-icon {
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+}
+
+.exhibition-info-main {
+    max-width: 640px;
+}
+
+.exhibition-info-main p {
+    color: var(--color-text-secondary);
+    line-height: 1.9;
+    font-size: 18px;
+}
+
+.exhibition-readmore {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: var(--spacing-md);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+}
+
+.exhibition-readmore-arrow {
+    font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+    .exhibition-info-layout {
+        gap: var(--spacing-3xl);
+        grid-template-columns: 280px 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-detail .hero-content {
+        padding-left: 0;
+    }
+    .exhibition-info-section {
+        padding: var(--spacing-2xl) 0;
+    }
+    .exhibition-info-layout {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+        max-width: 680px;
+    }
+}
