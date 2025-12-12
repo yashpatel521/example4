@@ -22,7 +22,7 @@
         <div class="exhibitions-grid">
             <article class="exhibition-item">
                 <a
-                    href="#"
+                    href="<?php echo BASE_URL ?>exhibitions-details.php"
                     class="exhibition-image-link"
                     aria-label="Beatriz Milhazes – Além do Horizonte">
                     <img
@@ -147,7 +147,7 @@
         <div class="exhibitions-grid">
             <article class="exhibition-item">
                 <a
-                    href="#"
+                    href="/exhibitions-details.php"
                     class="exhibition-image-link"
                     aria-label="Beatriz Milhazes – Além do Horizonte">
                     <img

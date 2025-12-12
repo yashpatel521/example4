@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="css/pages/salon.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/pages/art-fairs.css" />
+    <link rel="stylesheet" href="css/pages/exhibitions-details.css" />
 
     <!-- Font Awesome -->
     <link

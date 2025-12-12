@@ -1,4 +1,4 @@
-<header class="header <?php echo basename($_SERVER['PHP_SELF']) === 'index.php' ? 'header-home' : 'header-other'; ?>">
+<header class="header <?php echo basename($_SERVER['PHP_SELF']) === 'index.php' || basename($_SERVER['PHP_SELF']) === 'exhibitions-details.php' ? 'header-home' : 'header-other'; ?>">
     <div class="container header-container">
         <!-- Left Navigation -->
         <nav class="nav-left">
