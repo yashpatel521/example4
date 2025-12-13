@@ -22,7 +22,7 @@
         <div class="exhibitions-grid">
             <article class="exhibition-item">
                 <a
-                    href="<?php echo BASE_URL ?>exhibitions-details.php"
+                    href="<?php echo BASE_URL ?>exhibitions-details.php?id=4"
                     class="exhibition-image-link"
                     aria-label="Beatriz Milhazes – Além do Horizonte">
                     <img
@@ -59,7 +59,7 @@
 
             <article class="exhibition-item">
                 <a
-                    href="#"
+                    href="<?php echo BASE_URL ?>exhibitions-details.php?id=5"
                     class="exhibition-image-link"
                     aria-label="Sylvia Snowden – On the Verge">
                     <img
@@ -82,7 +82,7 @@
                                 human spirit.
                             </p>
                             <a
-                                href="/pages/exhibitions-details.html"
+                                href="<?php echo BASE_URL ?>exhibitions-details.php?id=5"
                                 class="exhibition-cta"
                                 aria-label="Visit exhibition Sylvia Snowden">
                                 <span class="exhibition-arrow" aria-hidden="true">→</span>
@@ -124,7 +124,7 @@
                         are not at odds but in balance.
                     </p>
                     <a
-                        href="/pages/exhibitions-details.html"
+                        href="<?php echo BASE_URL ?>exhibitions-details.php?id=2"
                         class="feature-cta"
                         aria-label="Visit exhibition Thresholds link-underline">
                         <span class="feature-cta-arrow" aria-hidden="true">→</span>
@@ -147,11 +147,11 @@
         <div class="exhibitions-grid">
             <article class="exhibition-item">
                 <a
-                    href="/exhibitions-details.php"
+                    href="<?php echo BASE_URL ?>exhibitions-details.php?id=6"
                     class="exhibition-image-link"
                     aria-label="Beatriz Milhazes – Além do Horizonte">
                     <img
-                        src="<?php echo $PAINTINGS[7]['image']; ?>"
+                        src="<?php echo $PAINTINGS[6]['image']; ?>"
                         alt="Beatriz Milhazes exhibition installation view"
                         class="exhibition-image" />
                 </a>
@@ -191,11 +191,11 @@
 
             <article class="exhibition-item">
                 <a
-                    href="#"
+                    href="<?php echo BASE_URL ?>exhibitions-details.php?id=8"
                     class="exhibition-image-link"
                     aria-label="Sylvia Snowden – On the Verge">
                     <img
-                        src="<?php echo $PAINTINGS[5]['image']; ?>"
+                        src="<?php echo $PAINTINGS[8]['image']; ?>"
                         alt="Sylvia Snowden exhibition installation view"
                         class="exhibition-image" />
                 </a>
@@ -252,7 +252,7 @@
                         notable artworks by Jean-Michel Basquiat, Alexander Calder,
                         Carmen Herrera and Andy Warhol among others.
                     </p>
-                    <a href="#" class="salon-cta" aria-label="Explore online">
+                    <a href="<?php echo BASE_URL ?>exhibitions-details.php?id=28" class="salon-cta" aria-label="Explore online">
                         <span class="salon-cta-arrow" aria-hidden="true">→</span>
                         <span class="link-underline">Explore online</span>
                     </a>
@@ -277,7 +277,7 @@
                     <p class="book-newin-description">
                         Published to mark Howardena Pindell’s solo exhibition at White Cube Bermondsey (November 2025 – January 2026), this monograph charts an extensive body of work made between the 1960s and the present day. Lavishly illustrated and offering compelling full-bleed details, ‘Howardena’ offers a discovery of the inimitable life and practice of the groundbreaking African American artist.
                     </p>
-                    <a href="#" class="book-newin-cta"><span class="book-newin-cta-arrow">→</span><span class="link-underline">Purchase</span></a>
+                    <a href="<?php echo BASE_URL ?>exhibitions-details.php?id=29" class="book-newin-cta"><span class="book-newin-cta-arrow">→</span><span class="link-underline">Purchase</span></a>
                 </div>
             </div>
         </div>
@@ -300,7 +300,7 @@
             for ($i = 0; $i < 5; $i++) {
             ?>
                 <article class="news-card">
-                    <a href="#" class="news-image-link">
+                    <a href="<?php echo BASE_URL ?>exhibitions-details.php?id=<?php echo $i; ?>" class="news-image-link">
                         <div class="news-image-wrap">
                             <img
                                 class="news-image"
@@ -311,7 +311,7 @@
                     <div class="news-meta">
                         <div class="news-category"><?php echo $PAINTINGS[$i]['category']; ?></div>
                         <h3 class="news-headline">
-                            <a href="#"><?php echo $PAINTINGS[$i]['headline']; ?></a>
+                            <a href="<?php echo BASE_URL ?>exhibitions-details.php?id=<?php echo $i; ?>"><?php echo $PAINTINGS[$i]['headline']; ?></a>
                         </h3>
                         <p class="news-info">
                             <?php echo $PAINTINGS[$i]['info']; ?>

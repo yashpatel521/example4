@@ -14,14 +14,14 @@
         <div class="bottom-nav-content">
             <!-- Primary Navigation (4 items in single row) -->
             <div class="bottom-nav-primary">
-                <a href="./artists.html" class="bottom-nav-item">Artists</a>
-                <a href="./exhibitions.html" class="bottom-nav-item">Exhibitions</a>
-                <a href="./collect.html" class="bottom-nav-item">Collect</a>
-                <a href="./contact.html" class="bottom-nav-item">Bookmark</a>
+                <a href="<?php echo BASE_URL . 'artist-details.php'; ?>" class="bottom-nav-item">Artists</a>
+                <a href="<?php echo BASE_URL . 'exhibitions.php'; ?>" class="bottom-nav-item">Exhibitions</a>
+                <a href="#" class="bottom-nav-item">Collect</a>
+                <a href="#" class="bottom-nav-item">Bookmark</a>
             </div>
 
             <!-- Account Section -->
-            <div class="bottom-nav-account">
+            <!-- <div class="bottom-nav-account">
                 <svg
                     width="18"
                     height="18"
@@ -33,7 +33,7 @@
                     <path d="M2 14c0-3.314 2.686-6 6-6s6 2.686 6 6" />
                 </svg>
                 <span>My Account</span>
-            </div>
+            </div> -->
 
             <!-- Toggle / Close Controls -->
             <button class="bottom-nav-more-toggle">

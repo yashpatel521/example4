@@ -1,17 +1,18 @@
 <?php include 'components/Links.php'; ?>
-
-<link rel="stylesheet" href="css/pages/artists.css" />
 <?php include 'components/Header.php'; ?>
+<?php
+$PAINTING_ID = $_GET['id'];
+?>
 <section class="hero hero-detail">
   <img
-    src="<?php echo $PAINTINGS[0]['image'] ?>"
+    src="<?php echo $PAINTINGS[$PAINTING_ID]['image'] ?>"
     alt="Contemporary Art Exhibition"
     class="hero-image" />
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <h1 class="hero-title">Beatriz Milhazes</h1>
-    <p class="hero-subtitle">Além do Horizonte</p>
-    <p class="hero-meta">19 November 2025 – 17 January 2026</p>
+    <h1 class="hero-title"><?php echo $PAINTINGS[$PAINTING_ID]['title'] ?></h1>
+    <p class="hero-subtitle"><?php echo $PAINTINGS[$PAINTING_ID]['subtitle'] ?></p>
+    <p class="hero-meta"><?php echo $PAINTINGS[$PAINTING_ID]['date'] ?></p>
   </div>
 </section>
 <section class="exhibition-info-section">
@@ -20,14 +21,12 @@
       <div class="exhibition-info-side">
         <div class="exhibition-info-block">
           <div class="exhibition-info-label">Dates</div>
-          <div class="exhibition-info-value">19 November 2025 – 17 January 2026</div>
+          <div class="exhibition-info-value"><?php echo $PAINTINGS[$PAINTING_ID]['date']; ?></div>
         </div>
         <div class="exhibition-info-block">
           <div class="exhibition-info-label">Location</div>
           <div class="exhibition-info-value">
-            White Cube Mason's Yard<br />
-            25–26 Mason's Yard<br />
-            London SW1Y 6BU
+            <?php echo $PAINTINGS[$PAINTING_ID]['location']; ?>
           </div>
         </div>
         <button type="button" class="exhibition-share" aria-label="Share exhibition">
@@ -40,9 +39,9 @@
         </button>
       </div>
       <div class="exhibition-info-main">
-        <p>In 'Além do Horizonte' (Beyond the Horizon), Beatriz Milhazes deepens her evolving enquiry into the aesthetic and affective potential of colour, pattern and ornament. Building on investigations first pursued in her presentation for the 2024 Venice Biennale, the exhibition at Mason’s Yard brings together new paintings, collages and a site-specific installation, drawing upon an expanded archive of textile and decorative sources that trace the psychedelia of mid-20th-century print culture, indigenous Brazilian and European design, ornamental craft traditions, and the accumulated materials of her own studio practice.</p>
-        <p>Throughout, Milhazes orchestrates these syncretic idioms into chromatic architectures in which order and exuberance ignite a productive tension, sustaining a sense of simultaneity and interconnectedness.</p>
-        <a href="#" class="exhibition-readmore link-underline"><span class="exhibition-readmore-arrow">→</span><span>Read more</span></a>
+        <p><?php echo $PAINTINGS[$PAINTING_ID]['description']; ?></p>
+        <p><?php echo $PAINTINGS[$PAINTING_ID]['long_description']; ?></p>
+        <!-- <a href="#" class="exhibition-readmore link-underline"><span class="exhibition-readmore-arrow">→</span><span>Read more</span></a> -->
       </div>
     </div>
   </div>
@@ -50,23 +49,14 @@
 <div class="artists-divider"></div>
 
 <section class="container p-0 exhibition_detail_second_section">
-  <h1>Featured Works</h1>
+  <h1>Painting</h1>
   <div class="artwork-image-container">
     <img
-      src="<?php echo $PAINTINGS[0]['image'] ?>"
+      src="<?php echo $PAINTINGS[$PAINTING_ID]['image'] ?>"
       alt="Atrabiliarios"
       class="artwork-image" />
   </div>
-  <div class="artwork-card-details">
-    <div class="artwork-card-text">
-      <p class="artwork-card-artist">Doris Salcedo</p>
-      <p class="artwork-card-title">Atrabiliarios, 1993</p>
-    </div>
-    <div class="artwork-card-actions">
-      <button class="artwork-card-button">+</button>
-      <button class="artwork-card-button">Enquire</button>
-    </div>
-  </div>
+
 </section>
 
 <?php include 'components/Footer.php'; ?>

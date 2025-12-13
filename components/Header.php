@@ -2,8 +2,8 @@
     <div class="container header-container">
         <!-- Left Navigation -->
         <nav class="nav-left">
-            <a href="<?php echo BASE_URL . 'artist-details.php'; ?>" class="nav-link">Artists</a>
-            <a href="./pages/exhibitions.html" class="nav-link">Exhibitions</a>
+            <a href="<?php echo BASE_URL . 'artist-details.php'; ?>" class="nav-link">Artist</a>
+            <a href="<?php echo BASE_URL . 'exhibitions.php'; ?>" class="nav-link">Exhibitions</a>
         </nav>
 
         <!-- Centered Logo -->
@@ -11,9 +11,9 @@
 
         <!-- Right Navigation -->
         <nav class="nav-right">
-            <a href="./pages/collect.html" class="nav-link">Collect</a>
-            <a href="./pages/contact.html" class="nav-link">Bookshop</a>
-            <a href="./profile.html" class="user-icon" aria-label="Account">
+            <a href="#" class="nav-link">Collect</a>
+            <a href="#" class="nav-link">Bookshop</a>
+            <a href="<?php echo BASE_URL . 'artist-details.php'; ?>" class="user-icon" aria-label="Account">
                 <svg
                     width="16"
                     height="16"
