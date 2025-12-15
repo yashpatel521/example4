@@ -463,11 +463,20 @@
 }
 
 @media (max-width: 1024px) {
+    .artist-name {
+        font-size: 18px;
+    }
+    .artists-gallery-section,
+    .artists-list-section {
+        padding: 1rem 0rem;
+    }
     .artists-page {
         padding-top: calc(0px + var(--spacing-3xl));
     }
     .artists-gallery-grid {
         grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+        gap: 2rem;
     }
     .artists-list-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -485,7 +494,7 @@
         height: 280px;
     }
     .artist-hero {
-        padding: 4.5rem 0 5rem;
+        padding: 2rem 0;
     }
 
     .artist-hero-inner {
@@ -496,7 +505,7 @@
         max-height: 480px;
     }
     .artists-header-row {
-        padding: 1rem 2rem;
+        padding: 1rem 0rem;
     }
     .artists-title {
         font-size: 3rem;
@@ -517,8 +526,9 @@
     }
     .artist-hero-inner {
         grid-template-columns: 1fr;
-        row-gap: 2.5rem;
+        row-gap: 1rem;
         text-align: center;
+        padding: 0 !important;
     }
 
     .artist-hero-text {

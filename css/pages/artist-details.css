@@ -921,9 +921,23 @@
 }
 
 @media (max-width: 1024px) {
+    .artist-news-section,
+    .artist-bookshop-section,
+    .artist-museum-section,
+    .artist-featured-film-section,
+    .artist-exhibitions-section,
+    .artist-available-section,
+    .artist-artworks-section {
+        padding: 1rem 0;
+    }
+    .artist-bio-content p {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
     .artist-bio-inner {
         padding: 0 20px;
         column-gap: 2.5rem;
+        padding: 1rem 0;
     }
 
     .artist-artworks-inner,
@@ -939,9 +953,13 @@
 }
 
 @media (max-width: 768px) {
+    .artist-available-title {
+        margin-bottom: 0;
+    }
     .artist-bio-inner {
         grid-template-columns: 1fr;
-        row-gap: 2rem;
+        row-gap: 0rem;
+        padding: 0;
     }
 
     .artist-artworks-inner,
@@ -977,6 +995,7 @@
 
     .artist-available-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .artist-exhibitions-grid {

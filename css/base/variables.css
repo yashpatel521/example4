@@ -4,168 +4,156 @@
 
 /* Font Face Declarations */
 @font-face {
-  font-family: "beausite-detail";
-  src: url("../../assets/fonts/BeausiteDetailWeb-Clear.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  font-display: swap;
+    font-family: "beausite-detail";
+    src: url("../../assets/font/BeausiteDetailWeb-Clear.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: "beausite-detail";
-  src: url("../../assets/fonts/BeausiteDetailWeb-ClearItalic.ttf")
-    format("truetype");
-  font-weight: 300;
-  font-style: italic;
-  font-stretch: normal;
-  font-display: swap;
+    font-family: "beausite-detail";
+    src: url("../../assets/fonts/BeausiteDetailWeb-ClearItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+    font-stretch: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: "beausite-detail";
-  src: url("../../assets/fonts/BeausiteDetailWeb-Regular.ttf")
-    format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  font-display: swap;
+    font-family: "beausite-detail";
+    src: url("../../assets/fonts/BeausiteDetailWeb-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: "beausite-detail";
-  src: url("../../assets/fonts/BeausiteDetailWeb-RegularItalic.ttf")
-    format("truetype");
-  font-weight: 400;
-  font-style: italic;
-  font-stretch: normal;
-  font-display: swap;
+    font-family: "beausite-detail";
+    src: url("../../assets/fonts/BeausiteDetailWeb-RegularItalic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: "beausite-detail";
-  src: url("../../assets/fonts/BeausiteDetailWeb-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  font-display: swap;
+    font-family: "beausite-detail";
+    src: url("../../assets/fonts/BeausiteDetailWeb-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: "beausite-detail";
-  src: url("../../assets/fonts/BeausiteDetailWeb-MediumItalic.ttf")
-    format("truetype");
-  font-weight: 500;
-  font-style: italic;
-  font-stretch: normal;
-  font-display: swap;
+    font-family: "../../assets/beausite-detail";
+    src: url("fonts/BeausiteDetailWeb-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+    font-stretch: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: "beausite-display";
-  src: url("../../assets/fonts/BeausiteDisplayWeb-Thin.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal;
-  font-stretch: normal;
-  font-display: swap;
+    font-family: "beausite-display";
+    src: url("../../assets/fonts/BeausiteDisplayWeb-Thin.ttf") format("truetype");
+
+    font-style: normal;
+    font-stretch: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: "beausite-display";
-  src: url("../../assets/fonts/BeausiteDisplayWeb-ThinItalic.ttf")
-    format("truetype");
-  font-weight: 100;
-  font-style: italic;
-  font-stretch: normal;
-  font-display: swap;
+    font-family: "beausite-display";
+    src: url("../../assets/fonts/BeausiteDisplayWeb-ThinItalic.ttf") format("truetype");
+    font-weight: 100;
+    font-style: italic;
+    font-stretch: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: "beausite-text";
-  src: url("../../assets/fonts/BeausiteTextWeb-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  font-display: swap;
+    font-family: "beausite-text";
+    src: url("../../assets/fonts/BeausiteTextWeb-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: "beausite-text";
-  src: url("../../assets/fonts/BeausiteTextWeb-LightItalic.ttf")
-    format("truetype");
-  font-weight: 300;
-  font-style: italic;
-  font-stretch: normal;
-  font-display: swap;
+    font-family: "beausite-text";
+    src: url("../../assets/fonts/BeausiteTextWeb-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+    font-stretch: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: "beausite-text";
-  src: url("../../assets/fonts/BeausiteTextWeb-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-stretch: normal;
-  font-display: swap;
+    font-family: "beausite-text";
+    src: url("../../assets/fonts/BeausiteTextWeb-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: "beausite-text";
-  src: url("../../assets/fonts/BeausiteTextWeb-BoldItalic.ttf")
-    format("truetype");
-  font-weight: 700;
-  font-style: italic;
-  font-stretch: normal;
-  font-display: swap;
+    font-family: "beausite-text";
+    src: url("../../assets/fonts/BeausiteTextWeb-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: normal;
+    font-display: swap;
 }
 :root {
-  /* Colors */
-  --color-primary: #000000;
-  --color-secondary: #ffffff;
-  --color-accent: #e63946;
-  --color-text-primary: #1a1a1a;
-  --color-text-secondary: #000;
-  --color-text-light: #999999;
-  --color-bg-primary: #ffffff;
-  --color-bg-secondary: #f8f8f8;
-  --color-bg-dark: #0a0a0a;
-  --color-border: #e0e0e0;
-  --color-overlay: rgba(0, 0, 0, 0.3);
+    /* Colors */
+    --color-primary: #000000;
+    --color-secondary: #ffffff;
+    --color-accent: #e63946;
+    --color-text-primary: #1a1a1a;
+    --color-text-secondary: #000;
+    --color-text-light: #999999;
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #f8f8f8;
+    --color-bg-dark: #0a0a0a;
+    --color-border: #e0e0e0;
+    --color-overlay: rgba(0, 0, 0, 0.3);
 
-  /* Typography */
-  /* Match old demo: base/detail uses beausite-detail, headings/text use beausite-text */
-  --font-primary: "beausite-detail", sans-serif;
-  --font-secondary: "beausite-text", sans-serif;
-  --font-text: "beausite-detail", sans-serif;
-  --font-title: "beausite-display", sans-serif;
+    /* Typography */
+    /* Match old demo: base/detail uses beausite-detail, headings/text use beausite-text */
+    --font-primary: beausite-detail, sans-serif;
+    --font-secondary: "beausite-text", sans-serif;
+    --font-text: beausite-detail, sans-serif;
+    --font-title: "beausite-display-thin", sans-serif;
 
-  /* Font Sizes */
-  --fs-xs: 0.75rem;
-  --fs-sm: 0.875rem;
-  --fs-base: 1rem;
-  --fs-lg: 1.125rem;
-  --fs-xl: 1.25rem;
-  --fs-2xl: 1.5rem;
-  --fs-3xl: 2rem;
-  --fs-4xl: 2.5rem;
-  --fs-5xl: 3rem;
-  --fs-6xl: 4rem;
+    /* Font Sizes */
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.125rem;
+    --fs-xl: 1.25rem;
+    --fs-2xl: 1.5rem;
+    --fs-3xl: 2rem;
+    --fs-4xl: 2.5rem;
+    --fs-5xl: 3rem;
+    --fs-6xl: 4rem;
 
-  /* Spacing */
-  --spacing-xs: 0.5rem;
-  --spacing-sm: 1rem;
-  --spacing-md: 1.5rem;
-  --spacing-lg: 2rem;
-  --spacing-xl: 3rem;
-  --spacing-2xl: 4rem;
-  --spacing-3xl: 6rem;
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
+    --spacing-3xl: 6rem;
 
-  /* Layout */
-  --container-max: 1800px;
-  --container-padding: 2rem;
-  --header-height: 80px;
+    /* Layout */
+    --container-max: 1800px;
+    --container-padding: 2rem;
+    --header-height: 80px;
 
-  /* Transitions */
-  --transition-fast: 0.2s ease;
-  --transition-base: 0.3s ease;
-  --transition-slow: 0.5s ease;
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.5s ease;
 
-  /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
-  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
-}
-
-/* Apply the primary font to the entire page */
-body {
-  font-family: var(--font-primary);
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
 }
