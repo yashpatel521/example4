@@ -177,9 +177,9 @@ p {
   padding: 0 var(--container-padding);
 }
 
-.section {
+/* .section {
   padding: var(--spacing-3xl) 0;
-}
+} */
 
 .section-dark {
   background-color: var(--color-bg-dark);
@@ -524,9 +524,9 @@ p {
   font-weight: 500;
   color: var(--color-text-secondary);
 }
-.exhibitions-section {
+/* .exhibitions-section {
   padding-top: var(--spacing-xl);
-}
+} */
 
 .exhibitions-section .exhibitions-grid {
   display: grid;
@@ -631,9 +631,9 @@ p {
 }
 
 /* Thresholds feature exhibition section */
-.feature-exhibition {
+/* .feature-exhibition {
   padding: var(--spacing-3xl) 0;
-}
+} */
 
 .feature-exhibition .container {
   max-width: 1740px;
@@ -1645,7 +1645,7 @@ p {
   .collect-consignments-hero,
   .create-account-hero-layout,
   .header-container {
-    padding: 55px 2rem !important;
+    padding: 20px 2rem !important;
   }
 }
 @media (max-width: 1400px) {
